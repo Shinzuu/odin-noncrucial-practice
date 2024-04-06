@@ -30,3 +30,24 @@ newDiv.style.backgroundColor = "pink";
     newDiv.appendChild(divParagrapph);
 
 container.appendChild(newDiv);
+
+
+
+btn.addEventListener("click", function (e) {
+    console.log(e.target);
+  });
+
+btn.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
+  });
+
+
+
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
